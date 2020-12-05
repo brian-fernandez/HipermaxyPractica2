@@ -1,0 +1,127 @@
+/*SLIDER TITTLE*/
+.carousel-item
+{
+    position: relative;
+}
+.titulo1
+{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background-color: #ff77127a;
+    padding: 50px;
+    text-align: center;
+}
+
+.titulo2
+{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: #dc354557;
+    padding: 50px;
+    text-align: center;
+}
+.titulo3
+{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-color: #9e9e9e6b;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+.titulo1 h5 {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 900;
+    font-size: 4em;
+    width: 40%;
+    
+    
+}
+
+.titulo3 h5 {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 900;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.titulo2 h5 {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 900;
+    font-size: 4em;
+    width: 40%;
+    text-align: end;
+    
+}
+.titulo1 p{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    width: 40%;
+    text-align: end;
+    
+}
+.titulo2 p{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    width: 40%;
+    
+}
+.titulo3 p{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    
+    
+}
+
+.carousel-item img
+{
+    filter: brightness(0.6);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 2% !important;
+    color: blue !important;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+    background-color: #0000003d;
+}
+
+
+/*secciones de imagenes*/
+.texto-seccion-1
+{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+
+}
+.texto-seccion-1 h1
+{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}

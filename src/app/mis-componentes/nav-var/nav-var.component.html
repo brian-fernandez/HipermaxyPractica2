@@ -1,0 +1,52 @@
+ <!-- Nav var -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navv" style="display: flex;">
+    <a class="navbar-brand" href="#">
+      <img src="../../../assets/img/inicio/logo-hipermaxi.png" width="100%" height="60" alt="" loading="lazy">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse row justify-content-between" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="">INICIO <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="frutasyverduras" >FRUTAS Y VERDURAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="bebidas" >BEBIDAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="carne-embutido">CARNE Y EMBUTIDOS</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"> </a>
+        </li>
+
+
+
+        <li class="nav-item dropdown" id="cuenta" style="display: block;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            MI CUENTA
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <P class="dropdown-item" routerLink="opciones" >OPCIONES</P>
+            <a class="dropdown-item" (click)="salir()" id="dos">SALIR</a>
+
+
+          </div>
+        </li>
+
+
+
+      </ul>
+
+    </div>
+  </nav>
+  <!-- Fin de nav var -->

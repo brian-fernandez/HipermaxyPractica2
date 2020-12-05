@@ -1,0 +1,151 @@
+/*
+
+
+
+░██████╗████████╗██╗░░░██╗██╗░░░░░███████╗  ░█████╗░░██████╗░██████╗  ██████╗░██████╗░██╗░█████╗░███╗░░██╗
+██╔════╝╚══██╔══╝╚██╗░██╔╝██║░░░░░██╔════╝  ██╔══██╗██╔════╝██╔════╝  ██╔══██╗██╔══██╗██║██╔══██╗████╗░██║
+╚█████╗░░░░██║░░░░╚████╔╝░██║░░░░░█████╗░░  ██║░░╚═╝╚█████╗░╚█████╗░  ██████╦╝██████╔╝██║███████║██╔██╗██║
+░╚═══██╗░░░██║░░░░░╚██╔╝░░██║░░░░░██╔══╝░░  ██║░░██╗░╚═══██╗░╚═══██╗  ██╔══██╗██╔══██╗██║██╔══██║██║╚████║
+██████╔╝░░░██║░░░░░░██║░░░███████╗███████╗  ╚█████╔╝██████╔╝██████╔╝  ██████╦╝██║░░██║██║██║░░██║██║░╚███║
+╚═════╝░░░░╚═╝░░░░░░╚═╝░░░╚══════╝╚══════╝  ░╚════╝░╚═════╝░╚═════╝░  ╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
+
+@ᴄᴏᴘʏʀɪɢʜᴛ RNOVA
+
+
+
+
+*/
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+/*fin font*/
+
+/* Configuracion de body o pagina global  ***  NO TOCAR ***/
+
+#particles-js .particles-js-canvas-el{
+   
+    
+    
+}
+body{
+    
+    
+    
+}
+
+body::-webkit-scrollbar{width: 5px;} body::-webkit-scrollbar-thumb{background-color: #ff7712;color: #ff7712;}body::-webkit-scrollbar-button{background-color: blue; color: blue;}*::selection {
+    background-color: #ff7712;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 119 18) !important;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #dc7529 !important;
+}
+
+a { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+/* Fin de configuracion de body o pagina global */
+
+
+/*
+
+░█████╗░███╗░░██╗██╗███╗░░░███╗░█████╗░░█████╗░██╗░█████╗░███╗░░██╗███████╗░██████╗
+██╔══██╗████╗░██║██║████╗░████║██╔══██╗██╔══██╗██║██╔══██╗████╗░██║██╔════╝██╔════╝
+███████║██╔██╗██║██║██╔████╔██║███████║██║░░╚═╝██║██║░░██║██╔██╗██║█████╗░░╚█████╗░
+██╔══██║██║╚████║██║██║╚██╔╝██║██╔══██║██║░░██╗██║██║░░██║██║╚████║██╔══╝░░░╚═══██╗
+██║░░██║██║░╚███║██║██║░╚═╝░██║██║░░██║╚█████╔╝██║╚█████╔╝██║░╚███║███████╗██████╔╝
+╚═╝░░╚═╝╚═╝░░╚══╝╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░╚════╝░╚═╝░░╚══╝╚══════╝╚═════╝░
+
+██████╗░██████╗░██╗░█████╗░███╗░░██╗
+██╔══██╗██╔══██╗██║██╔══██╗████╗░██║
+██████╦╝██████╔╝██║███████║██╔██╗██║
+██╔══██╗██╔══██╗██║██╔══██║██║╚████║
+██████╦╝██║░░██║██║██║░░██║██║░╚███║
+╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
+
+@copyright RNOVA
+*/
+
+/*Animaciones services*/
+.cardd:hover
+{
+ animation: 1s cajas forwards;
+}
+@keyframes cajas 
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    100%
+    {
+transform: translateY(-5px);
+box-shadow: 0px 15px 45px rgba(0,0,0,0.2);
+    }
+}
+
+/*Fin de animaciones services*/
+
+.particles-js
+{
+    height: 500px;
+}
+
+
+
+
+
+
+/*MEDIA*/
+
+@media only screen and (max-width: 600px) {
+    
+    #global {
+        
+        width: 60%;
+        height: 1200px;
+
+       
+    }
+    #global h1 
+    {
+        font-size: 1.4em;
+    }
+    .texto {
+       padding: 0px;
+        background: #fff;
+        margin: 10px 0px;
+        font-size: 0.8em;
+    }
+    .texto img 
+    {
+        width: 50px;
+    }
+    .botones
+    {
+        width: 60%;
+        top: 90%;
+    }
+    .cardd
+    {
+        display: block !important;
+    }
+    .card 
+    {
+        width: 100% !important;
+    }
+
+    .titulo1 {
+        
+        font-size: 0.9em;
+    }
+
+   .particles-js
+    {
+        height: 1000px ;
+    }
+
+  }

@@ -1,0 +1,19 @@
+#inicio-sesion
+{
+    background-color: #ff771263;
+    position: fixed;
+
+    top: 0px;
+    z-index: 1;
+    height: 700px;
+
+}
+#registrarse
+{
+    background-color: #ff771263;
+    position: fixed;
+
+    top: 0px;
+    z-index: 1;
+    height: 700px;
+}

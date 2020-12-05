@@ -1,0 +1,212 @@
+
+<div class="container-fluid p-0">
+  <div class="row" style="margin: 0px;">
+      <div class="col-sm-3 border ">
+          <h3 class="p-2" style="text-align: center;"> <i class="fa fa-cog" aria-hidden="true"></i>  OPCIONES</h3>
+          <hr>
+          <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="tab-1"  (click)="tab1()" > <i class="fa fa-address-book" aria-hidden="true"></i>   CUENTA</li>
+                <li class="list-group-item" id="tab-2" (click)="tab2()" ><i class="fa fa-shopping-basket" aria-hidden="true" ></i>   HISTORIAL DE COMPRA</li>
+                <li class="list-group-item" id="tab-3" (click)="tab3()" ><i class="fa fa-pencil" aria-hidden="true" ></i>   EDITAR</li>
+                <li class="list-group-item" id="tab-4" (click)="tab4()" ><i class="fa fa-credit-card-alt" aria-hidden="true" ></i>   TARJETA DE CREDITO</li>
+              </ul>
+            </div>
+      </div>
+      <div class="col-sm-9 border ">
+
+        <!-- Usuario -->
+
+        <div class="container q1" id="usuario-caja" >
+          <div class="row border " style="margin: 0px;">
+          <div class="col-sm-6 p-4">
+            <b><p>Nombre:</p></b> <p>{{nombre}}</p>
+            <b><p>Apellido Paterno:</p></b> <p>{{apellido_paterno}}</p>
+            <b><p>Apellido Materno:</p></b> <p>{{apellido_materno}}</p>
+            <b><p>Correo:</p></b> <p>{{email}}</p>
+
+            <b><p>Telefono/Celular:</p></b> <p>{{telefono}}</p>
+           <b> <p>Vivienda</p></b> <p>{{direccion}}</p>
+           <b> <p>Numero de casa:</p></b> <p>{{num_de_casa}}</p>
+
+          </div>
+          <div class="col-sm-6 p-4 ">
+
+
+          </div>
+          </div>
+        </div>
+        <!-- fin usuario -->
+
+<!-- HISTORIAL DE COMPRAR -->
+<div class="container" id="compra-caja" >
+<div class="row border boder-primary" style="margin: 0px;">
+<div class="col-sm-12 p-4">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Verificada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Manzana</td>
+        <td>2bs</td>
+        <td>27/11/2020</td>
+        <td>SI</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Manzana,pepsi</td>
+        <td>14bs</td>
+        <td>27/11/2020</td>
+        <td>SI</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Manzana</td>
+        <td>2bs</td>
+        <td>27/11/2020</td>
+        <td>SI</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
+
+</div>
+</div>
+<!-- Fin historial de compras -->
+
+
+
+<!-- editar -->
+<div class="container" id="editar-caja" >
+<div class="row border " style="margin: 0px;">
+<div class="col-sm-6 p-4">
+
+    <div class="form-group" id="form2">
+      <label for="exampleInputEmail1">Nombre</label>
+      <p id="content-1">{{nombre}}</p>
+      <input [(ngModel)]="nombre"  type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp" >
+<br>
+
+      <label for="exampleInputEmail1">Apellido Paterno</label>
+      <p id="content-2">{{apellido_paterno}}</p>
+      <input [(ngModel)]="apellido_paterno"  type="text" class="form-control" id="apellp" name="apellido_paterno" aria-describedby="emailHelp">
+<br>
+
+      <label for="exampleInputEmail1">Apellido Materno</label>
+      <p id="content-3">{{apellido_materno}}</p>
+      <input  [(ngModel)]="apellido_materno" type="text" class="form-control" id="apellm"  name="apellido_materno" aria-describedby="emailHelp">
+
+<br>
+
+      <label for="exampleInputEmail1">Telefono/Celular</label>
+      <p id="content-4">{{telefono}}</p>
+      <input [(ngModel)]="telefono" type="cel" class="form-control" id="tel"  name="telefono" aria-describedby="emailHelp">
+<br>
+
+
+
+      <label for="exampleFormControlTextarea1">Vivienda</label>
+      <p id="content-5">{{direccion}}</p>
+      <textarea [(ngModel)]="direccion" class="form-control" id="vivienda" rows="3"></textarea>
+<br>
+
+    <label for="exampleInputEmail1">Numero de vivienda</label>
+    <p id="content-6">{{num_de_casa}}</p>
+    <input [(ngModel)]="num_de_casa" type="number" class="form-control" id="numvivienda" aria-describedby="emailHelp">
+  </div>
+
+    <br>
+    <p style="display: block;"  id="edit" (click)="edit1()"class="btn btn-danger">Editar</p>
+    <p style="display: none;"  id="fin" class="btn btn-success" (click)="fin()">Finalizar</p>
+    <p style="display: none;"  id="cancelar" class="btn btn-warning"  (click)="cancelar()">Cancelar</p>
+
+</div>
+<div class="col-sm-6 p-4 ">
+
+
+</div>
+</div>
+</div>
+<!-- fin editar -->
+
+
+
+
+<!-- tarjeta -->
+<div class="container" id="tarjeta-caja" >
+
+<div class="row border " style="margin: 0px;">
+<div class="col-sm-6 p-4">
+  <h5>Tus tarjetas</h5>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Selecciona</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1543543535345</option>
+      <option>2564645645646</option>
+      <option>345645645645646</option>
+      <option>445645645654654</option>
+      <option>5456456456456</option>
+    </select>
+    <br>
+    <p class=" btn btn-success">Elegir </p>
+
+    <p class=" btn btn-success" id="añadir-tarjeta-caja"(click)="tarjeta()">Añadir nueva tarjeta</p>
+  </div>
+</div>
+<div class="col-sm-6 p-4 ">
+
+<div id="contenedor-form">
+  <form id="añadir-tarjeta">
+    <div class="form-group" >
+
+      <label for="exampleFormControlSelect1">Tipo de tarjeta</label>
+      <select class="form-control" id="tarjetatipo">
+        <option>Visa</option>
+        <option>Debito</option>
+
+
+      </select>
+      <label for="exampleInputEmail1">Numero de la tarjeta</label>
+      <input type="number" class="form-control" id="tarjetanum" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre del propietario</label>
+      <input type="text" class="form-control" id="tarjetanombre" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Apellido Paterno</label>
+      <input type="text" class="form-control" id="tarjetaapellidop" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Apellido Materno</label>
+      <input type="text" class="form-control" id="tarjetaapellidom" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">CVC</label>
+      <input type="text" class="form-control" id="tarjetacvc" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">fecha de vencimiento de la tarjeta</label>
+      <input type="text" class="form-control" id="tarjetaf" aria-describedby="emailHelp">
+    </div>
+
+    <button type="submit" id="fintarjeta" class="btn btn-success" (click)="anadir()">Añadir</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<!-- fin tarjeta -->
+      </div>
+  </div>
+</div>

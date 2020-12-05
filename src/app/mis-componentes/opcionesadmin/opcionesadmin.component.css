@@ -1,0 +1,44 @@
+#usuario-caja
+{
+  display: block;
+}
+#compra-caja
+{
+  display: none;
+}
+#editar-caja
+{
+  display: none;
+}
+#tarjeta-caja
+{
+  display: none;
+}
+#añadir-caja
+{
+  display: none;
+}
+#lista-producto-caja
+{
+  display: none;
+}
+#form1, #from2
+{
+  display: block;
+}
+input
+{
+  display: none;
+}
+#exampleFormControlFile1
+{
+  display: none;
+}
+textarea
+{
+  display: none;
+}
+#contenedor-form
+{
+  display: none
+}

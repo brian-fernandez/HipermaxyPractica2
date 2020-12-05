@@ -1,0 +1,376 @@
+<div class="container-fluid p-0">
+  <div class="row" style="margin: 0px;">
+      <div class="col-sm-3 border ">
+          <h3 class="p-2" style="text-align: center;"> <i class="fa fa-cog" aria-hidden="true"></i>  OPCIONES</h3>
+          <hr>
+          <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="tab-1" (click)="tab1()" > <i class="fa fa-address-book" aria-hidden="true"></i>   CUENTA</li>
+                <li class="list-group-item" id="tab-2" (click)="tab2()" ><i class="fa fa-shopping-basket" aria-hidden="true" ></i>   HISTORIAL DE COMPRA</li>
+                <li class="list-group-item" id="tab-3" (click)="tab3()" ><i class="fa fa-pencil" aria-hidden="true" ></i>   EDITAR</li>
+                <li class="list-group-item" id="tab-4" (click)="tab4()" ><i class="fa fa-credit-card-alt" aria-hidden="true" ></i>   TARJETA DE CREDITO</li>
+                <li class="list-group-item" id="tab-5" (click)="tab5()"><i class="fa fa-plus" aria-hidden="true"></i> AÑADIR
+                  PRODUCTO</li>
+              <li class="list-group-item" id="tab-6" (click)="tab6()"><i class="fa fa-plus" aria-hidden="true"></i> LISTA DE
+                  PRODUCTOS</li>
+
+
+              </ul>
+            </div>
+      </div>
+      <div class="col-sm-9 border ">
+
+        <!-- Usuario -->
+
+        <div class="container q1" id="usuario-caja" >
+          <div class="row border " style="margin: 0px;">
+          <div class="col-sm-6 p-4">
+            <p>Nombre:</p> <p>.</p>
+            <p>Apellido Paterno:</p> <p>.</p>
+            <p>Apellido Materno:</p> <p>.</p>
+            <p>Telefono/Celular:</p> <p>.</p>
+            <p>Vivienda</p> <p>.</p>
+            <p>Numero de casa:</p> <p>.</p>
+          </div>
+          <div class="col-sm-6 p-4 ">
+
+
+          </div>
+          </div>
+        </div>
+        <!-- fin usuario -->
+
+<!-- HISTORIAL DE COMPRAR -->
+<div class="container" id="compra-caja" >
+<div class="row border boder-primary" style="margin: 0px;">
+<div class="col-sm-12 p-4">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Verificada</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Manzana</td>
+        <td>2bs</td>
+        <td>27/11/2020</td>
+        <td>SI</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Manzana,pepsi</td>
+        <td>14bs</td>
+        <td>27/11/2020</td>
+        <td>SI</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Manzana</td>
+        <td>2bs</td>
+        <td>27/11/2020</td>
+        <td>SI</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
+
+</div>
+</div>
+<!-- Fin historial de compras -->
+
+
+
+<!-- editar -->
+<div class="container" id="editar-caja" >
+<form>
+<div class="row border " style="margin: 0px;">
+<div class="col-sm-6 p-4">
+
+    <div class="form-group" id="form2">
+      <label for="exampleInputEmail1">Nombre</label>
+      <p id="content-1">.</p>
+      <input  type="email" class="form-control" id="nombre" aria-describedby="emailHelp" >
+<br>
+
+      <label for="exampleInputEmail1">Apellido Paterno</label>
+      <p id="content-2">.</p>
+      <input  type="email" class="form-control" id="apellp" aria-describedby="emailHelp">
+<br>
+
+      <label for="exampleInputEmail1">Apellido Materno</label>
+      <p id="content-3">.</p>
+      <input  type="email" class="form-control" id="apellm" aria-describedby="emailHelp">
+
+<br>
+
+      <label for="exampleInputEmail1">Telefono/Celular</label>
+      <p id="content-4">.</p>
+      <input  type="email" class="form-control" id="tel" aria-describedby="emailHelp">
+<br>
+
+
+
+      <label for="exampleFormControlTextarea1">Vivienda</label>
+      <p id="content-5">.</p>
+      <textarea  class="form-control" id="vivienda" rows="3"></textarea>
+<br>
+
+    <label for="exampleInputEmail1">Numero de vivienda</label>
+    <p id="content-6">.</p>
+    <input  type="number" class="form-control" id="numvivienda" aria-describedby="emailHelp">
+  </div>
+
+    <br>
+    <p style="display: block;"  id="edit" (click)="edit1()"class="btn btn-danger">Editar</p>
+    <p style="display: none;"  id="fin" class="btn btn-success" (click)="fin()">Finalizar</p>
+    <p style="display: none;"  id="cancelar" class="btn btn-warning"  (click)="cancelar()">Cancelar</p>
+
+</div>
+<div class="col-sm-6 p-4 ">
+
+
+</div>
+</div>
+</form>
+</div>
+<!-- fin editar -->
+
+
+
+
+<!-- tarjeta -->
+<div class="container" id="tarjeta-caja" >
+
+<div class="row border " style="margin: 0px;">
+<div class="col-sm-6 p-4">
+  <h5>Tus tarjetas</h5>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Selecciona</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1543543535345</option>
+      <option>2564645645646</option>
+      <option>345645645645646</option>
+      <option>445645645654654</option>
+      <option>5456456456456</option>
+    </select>
+    <br>
+    <p class=" btn btn-success">Elegir </p>
+
+    <p class=" btn btn-success" id="añadir-tarjeta-caja"(click)="tarjeta()">Añadir nueva tarjeta</p>
+  </div>
+</div>
+<div class="col-sm-6 p-4 ">
+
+<div id="contenedor-form">
+  <form id="añadir-tarjeta">
+    <div class="form-group" >
+
+      <label for="exampleFormControlSelect1">Tipo de tarjeta</label>
+      <select class="form-control" id="tarjetatipo">
+        <option>Visa</option>
+        <option>Debito</option>
+
+
+      </select>
+      <label for="exampleInputEmail1">Numero de la tarjeta</label>
+      <input type="number" class="form-control" id="tarjetanum" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre del propietario</label>
+      <input type="text" class="form-control" id="tarjetanombre" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Apellido Paterno</label>
+      <input type="text" class="form-control" id="tarjetaapellidop" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Apellido Materno</label>
+      <input type="text" class="form-control" id="tarjetaapellidom" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">CVC</label>
+      <input type="text" class="form-control" id="tarjetacvc" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">fecha de vencimiento de la tarjeta</label>
+      <input type="text" class="form-control" id="tarjetaf" aria-describedby="emailHelp">
+    </div>
+
+    <button type="submit" id="fintarjeta" class="btn btn-success" (click)="anadir()">Añadir</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+<!-- fin tarjeta -->
+
+
+          <!-- añadir producto -->
+
+
+          <div class="container p-4" id="añadir-caja" >
+              <div class="row" style="margin: 0px;">
+                  <div class="col-sm-12">
+                      <p class="btn btn-success" id="product-tab-1" (click)="producto_tab_1()">Frutas y Verduras</p>
+                      <p class="btn btn-success" id="product-tab-2" (click)="producto_tab_2()">Bebidas</p>
+                      <p class="btn btn-success" id="product-tab-3" (click)="producto_tab_3()">Carne y Embutidos</p>
+
+                  </div>
+
+              </div>
+
+              <div id="frutas" style="display: none;">
+                  <div class="row" style="margin: 0px;">
+                      <div class="col-sm-12">
+                          <div class="form-group">
+
+
+                              <h3>Verduras</h3>
+                              <p class="btn btn-success" id="v-1" (click)="v_1();">Hortalizas</p>
+                              <p class="btn btn-success" id="v-2"(click)="v_2();">Tomates</p>
+                              <p class="btn btn-success" id="v-3"(click)="v_3();">Papa</p>
+                              <p class="btn btn-success" id="v-4"(click)="v_4();">Lechuga</p>
+                              <p class="btn btn-success" id="v-5"(click)="v_5();">Cebolla</p>
+                          </div>
+                          <div class="form-group">
+                              <h3>Frutas</h3>
+                              <p class="btn btn-success" id="f-1" (click)="f_1();">Citricos</p>
+                              <p class="btn btn-success" id="f-2"(click)="f_2();">Melones</p>
+                              <p class="btn btn-success" id="f-3"(click)="f_3();">Frutas Secas</p>
+                              <p class="btn btn-success" id="f-4"(click)="f_4();">Platanos</p>
+                              <p class="btn btn-success" id="f-5"(click)="f_5();">Manzana</p>
+                              <p class="btn btn-success" id="f-6"(click)="f_6();">Uva</p>
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+              <div id="Bebidas" style="display: none;">
+                  <div class="row" style="margin: 0px;">
+                      <div class="col-sm-12">
+                          <div class="form-group">
+
+
+                              <h3>Refrescos</h3>
+                              <p class="btn btn-success" id="r-1" (click)="r_1();">Coca cola</p>
+                              <p class="btn btn-success" id="r-2"(click)="r_2();">Jugos del valle</p>
+                              <p class="btn btn-success" id="r-3"(click)="r_3();">Jugos tampico</p>
+                              <p class="btn btn-success" id="r-4"(click)="r_4();">Agua vital</p>
+                              <p class="btn btn-success" id="r-5"(click)="r_5();">Fanta & Sprite</p>
+                          </div>
+                          <div class="form-group">
+                              <h3>Bebidas Alcohólicas</h3>
+                              <p class="btn btn-success" id="b-1"(click)="b_1();">Cerveza</p>
+                              <p class="btn btn-success" id="b-2"(click)="b_2();">SixPack</p>
+                              <p class="btn btn-success" id="b-3"(click)="b_3();">Smirnoff</p>
+                              <p class="btn btn-success" id="b-4"(click)="b_4();">Tragos</p>
+                              <p class="btn btn-success" id="b-5"(click)="b_5();">Vinos</p>
+                              <p class="btn btn-success" id="b-6"(click)="b_6();">Tequila</p>
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+              <div id="Carne" style="display: none;">
+                  <div class="row" style="margin: 0px;">
+                      <div class="col-sm-12">
+                          <div class="form-group">
+
+
+                              <h3>Cortes de carne</h3>
+                              <p class="btn btn-success" id="c-1"(click)="c_1();">Lomo</p>
+                              <p class="btn btn-success" id="c-2"(click)="c_2();">Chuletas</p>
+                              <p class="btn btn-success" id="c-3"(click)="c_3();">Costillar</p>
+                              <p class="btn btn-success" id="c-4"(click)="c_4();">Cuadril</p>
+                              <p class="btn btn-success" id="c-5"(click)="c_5();">Carne Molida</p>
+                          </div>
+                          <div class="form-group">
+                              <h3>Fiambres y Embutidos</h3>
+                              <p class="btn btn-success" id="e-1"(click)="e_1();">Chorizo empaquetado</p>
+                              <p class="btn btn-success" id="e-2"(click)="e_2();">Chorizo p granel</p>
+                              <p class="btn btn-success" id="e-3"(click)="e_3();">Salchichas</p>
+                              <p class="btn btn-success" id="e-4"(click)="e_4();">Jamon en barra</p>
+                              <p class="btn btn-success" id="e-5"(click)="e_5();">Mortadela empaquetada</p>
+                              <p class="btn btn-success" id="e-6"(click)="e_6();">Paté de higado</p>
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+              <p>CATEGORIA: </p>
+              <p id="Categoria">s</p>
+              <p>SUBCATEGORIA: </p>
+              <p id="subcategoria">d</p>
+              <p>PRECIO (Bs):</p> <input class="form-control" type="text" placeholder="bs." style="width: 10%;" id="cantidad">
+              <p>NOMBRE DEL PRODUCTO: </p><input class="form-control" type="text" style="width: 20%;" id="nombrepr">
+
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              <br>
+
+              <P class="btn btn-success" id="añadir-producto" (click)="anadirproducto()">Añadir</P>
+
+
+
+
+
+          </div>
+          <!-- fin de añadir producto  -->
+
+
+
+          <!-- Lista de productos -->
+
+          <div class="container" id="lista-producto-caja" style="display: none;">
+              <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Categoria</th>
+                      <th scope="col">Subcatgoria</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Eliminar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td><p class="btn btn-danger">Eliminar</p></td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+
+
+          </div>
+
+
+
+          <!-- Fin de lista productos -->
+
+      </div>
+  </div>
+</div>
