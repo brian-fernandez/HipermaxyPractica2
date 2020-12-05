@@ -49,6 +49,8 @@ export class LoginComponent implements OnInit {
             // footer: '<a href>Why do I have this issue?</a>'
           })
         } else {
+          location.reload();
+
           Swal.fire(
             'Bienvenido!',
             'Accediste al sistema',
@@ -60,7 +62,7 @@ export class LoginComponent implements OnInit {
             ocultar.style.display = 'flex';
             const mostrar = document.getElementById('foot');
             mostrar.style.display = 'block';
-            location.reload();
+
         }
 
 
