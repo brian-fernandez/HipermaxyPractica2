@@ -1,7 +1,7 @@
 <app-nav-var [hidden]="email == null"></app-nav-var>
 
 <!-- Carrito de compras -->
-<!-- <app-carrito></app-carrito> -->
+ <app-carrito [hidden]="email == null"></app-carrito>
 
 <router-outlet></router-outlet>
 

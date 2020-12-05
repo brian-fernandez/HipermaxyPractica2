@@ -36,12 +36,12 @@ export class AppComponent {
     console.log(this.email);
 
     if (localStorage.getItem("email")) {
+      this.router.navigate(['']);
 
-      this.router.navigate("");
     } else {
 
-      this.router.navigate("/login");
 
+      this.router.navigate(['login']);
     }
   }
 

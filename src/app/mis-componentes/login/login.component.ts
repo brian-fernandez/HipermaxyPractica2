@@ -31,6 +31,9 @@ export class LoginComponent implements OnInit {
 
         }
       );
+
+      const mostrarcarrito = document.getElementById('idVentanaCarrito');
+      mostrarcarrito.style.display = 'none';
   }
 
   login()
@@ -62,6 +65,7 @@ export class LoginComponent implements OnInit {
             ocultar.style.display = 'flex';
             const mostrar = document.getElementById('foot');
             mostrar.style.display = 'block';
+
 
         }
 

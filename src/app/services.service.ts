@@ -73,16 +73,38 @@ export class ServicesService {
       );
   }
 
-  editarPerfil(id, nombre,apellido_paterno,apellido_materno,telefono,direccion,numdecasa): Observable<any> {
+  editarPerfil(
+    id,
+    nombre,
+    apellido_paterno,
+    apellido_materno,
+    telefono,
+    direccion,
+    numdecasa
+  ): Observable<any> {
     this.httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/x-www-form-urlencoded',
       }),
     };
 
-
     // tslint:disable-next-line: max-line-length
-    var datoaEnviar = 'id=' + id + '&nombre=' + nombre + '&apellido_paterno=' + apellido_paterno + '&apellido_materno=' + apellido_materno  + '&telefono=' + telefono  + '&direccion=' + direccion +  '&numdecasa=' + numdecasa + '';
+    var datoaEnviar =
+      'id=' +
+      id +
+      '&nombre=' +
+      nombre +
+      '&apellido_paterno=' +
+      apellido_paterno +
+      '&apellido_materno=' +
+      apellido_materno +
+      '&telefono=' +
+      telefono +
+      '&direccion=' +
+      direccion +
+      '&numdecasa=' +
+      numdecasa +
+      '';
     return this.http
       .post(this.path + 'web/se/actualizar.php', datoaEnviar, this.httpOptions)
 
@@ -95,16 +117,41 @@ export class ServicesService {
         })
       );
   }
-  registrarUsuario(nombre,apellido_paterno,apellido_materno,correo,password,telefono,direccion,numdecasa): Observable<any> {
+  registrarUsuario(
+    nombre,
+    apellido_paterno,
+    apellido_materno,
+    correo,
+    password,
+    telefono,
+    direccion,
+    numdecasa
+  ): Observable<any> {
     this.httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/x-www-form-urlencoded',
       }),
     };
 
-
     // tslint:disable-next-line: max-line-length
-    var datoaEnviar = 'nombre=' + nombre + '&apellido_paterno=' + apellido_paterno + '&apellido_materno=' + apellido_materno + '&correo=' + correo +  '&password=' + password + '&telefono=' + telefono  + '&direccion=' + direccion  +  '&numdecasa=' + numdecasa+'';
+    var datoaEnviar =
+      'nombre=' +
+      nombre +
+      '&apellido_paterno=' +
+      apellido_paterno +
+      '&apellido_materno=' +
+      apellido_materno +
+      '&correo=' +
+      correo +
+      '&password=' +
+      password +
+      '&telefono=' +
+      telefono +
+      '&direccion=' +
+      direccion +
+      '&numdecasa=' +
+      numdecasa +
+      '';
     return this.http
       .post(this.path + 'web/se/registro.php', datoaEnviar, this.httpOptions)
 
